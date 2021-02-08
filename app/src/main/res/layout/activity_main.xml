@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/berb"
+
+  >
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="411dp"
+        android:layout_height="238dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:layout_marginVertical="25dp"
+            android:background="@color/white"
+
+            android:ems="10"
+            android:hint="Kullanıcı Adı"
+
+            android:padding="12dp"
+            android:paddingHorizontal="35dp"
+            android:textColor="@color/berbermoru"
+            android:textColorHint="@color/berbermoru" />
+
+        <EditText
+            android:id="@+id/sifre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="Şifre"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:paddingHorizontal="35dp"
+            android:textColor="@color/berbermoru"
+            android:textColorHint="@color/berbermoru" />
+
+        <Button
+
+            android:id="@+id/giris"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginVertical="15dp"
+            android:layout_marginStart="250dp"
+            android:backgroundTint="@color/berbermoru"
+
+            android:foreground="@drawable/giris"
+            android:onClick="giris"></Button>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="413dp"
+        android:layout_height="164dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="180dp"
+            android:layout_height="25dp"
+            android:layout_marginVertical="50dp"
+            android:layout_marginStart="65dp"
+            android:layout_weight="1"
+            android:text="Buradan Kayıt Olabilirsiniz.."
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="539dp"></TextView>
+
+        <TextView
+            android:id="@+id/kayit"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_marginVertical="50dp"
+            android:layout_marginRight="30dp"
+            android:onClick="kayit"
+            android:text="Kayit Ol"
+            android:textColor="@color/teal_200"
+            android:textSize="18dp"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="539dp"></TextView>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

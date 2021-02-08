@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "389593059434",
+    "project_id": "berber-7eb9a",
+    "storage_bucket": "berber-7eb9a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:389593059434:android:a14f7e08c5d2651eb2fa13",
+        "android_client_info": {
+          "package_name": "com.example.berber"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "389593059434-vm0bqp40qskkna8kf54e5ns8a072sg8q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLYLuoyCol822wdQib51UeojKcMIb1zX4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "389593059434-vm0bqp40qskkna8kf54e5ns8a072sg8q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

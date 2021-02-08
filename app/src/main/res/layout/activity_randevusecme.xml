@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/randevuekrani"
+    tools:context=".randevusecme">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="92dp"
+        android:layout_height="54dp"
+        android:layout_marginVertical="50dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginTop="55dp"
+        android:backgroundTint="#582F72"
+        android:foreground="@drawable/secbuton"
+        android:onClick="sec"
+        android:text="Seç"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="384dp"
+        android:layout_height="728dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="358dp"
+            android:layout_height="126dp"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="30dp">
+
+            <TextView
+                android:id="@+id/tarih"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="35dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:layout_marginVertical="50dp"
+                android:text="uygun saati seciniz"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+
+        </LinearLayout>
+
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="337dp"
+            android:layout_height="431dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="30dp"
+            tools:layout_editor_absoluteX="37dp"
+            tools:layout_editor_absoluteY="193dp">
+
+            <ToggleButton
+                android:id="@+id/dokuz30"
+                android:onClick="toggleButton"
+                android:layout_width="59dp"
+                android:layout_height="33dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/button"
+                android:text="9:30"
+                android:textOff="9:30"
+                android:textOn="9:30✓"
+                android:textSize="17dp"
+
+                android:textColor="@color/berbermoru"
+                app:layout_column="0"
+                app:layout_row="0" />
+
+            <ToggleButton
+                android:id="@+id/dokuz45"
+                android:onClick="toggleButton"
+
+                android:layout_width="63dp"
+                android:layout_height="33dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/button"
+
+                android:textOff="9:45"
+                android:textOn="9:45✓"
+                android:textSize="17dp"
+
+                android:textColor="@color/berbermoru"
+                app:layout_column="1"
+                app:layout_row="0" />
+
+            <ToggleButton
+                android:id="@+id/on"
+                android:onClick="toggleButton"
+
+                android:layout_width="63dp"
+                android:layout_height="33dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/button"
+
+                android:textOff="10:00"
+                android:textOn="10:00✓"
+                android:textSize="17dp"
+
+                android:textColor="@color/berbermoru"
+                app:layout_column="0"
+                app:layout_row="1" />
+
+            <ToggleButton
+                android:id="@+id/onbir"
+                android:layout_width="63dp"
+                android:layout_height="33dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/button"
+                android:onClick="toggleButton"
+
+                android:textOff="11:00"
+                android:textOn="11:00✓"
+                android:textSize="17dp"
+
+                android:textColor="@color/berbermoru"
+                app:layout_column="0"
+                app:layout_row="2" />
+
+            <ToggleButton
+                android:id="@+id/onbir15"
+                android:layout_width="63dp"
+                android:layout_height="33dp"
+                android:background="@drawable/button"
+                android:onClick="toggleButton"
+
+                android:textOff="11:15"
+                android:textOn="11:15✓"
+                android:textSize="17dp"
+
+                android:textColor="@color/berbermoru"
+                app:layout_column="1"
+                app:layout_row="2" />
+
+            <ToggleButton
+                android:id="@+id/onbir30"
+                android:layout_width="63dp"
+                android:layout_height="33dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/button"
+                android:onClick="toggleButton"
+
+                android:textOff="11:30"
+                android:textOn="11:30✓"
+                android:textSize="17dp"
+
+                android:textColor="@color/berbermoru"
+                app:layout_column="2"
+                app:layout_row="2" />
+
+            <ToggleButton
+                android:id="@+id/onbir45"
+                android:layout_width="63dp"
+                android:layout_height="33dp"
+                android:background="@drawable/button"
+                android:onClick="toggleButton"
+
+                android:textOff="11:45"
+                android:textOn="11:45✓"
+                android:textSize="17dp"
+
+                android:textColor="@color/berbermoru"
+                app:layout_column="3"
+                app:layout_row="2" />
+
+
+            <ToggleButton
+                android:id="@+id/on15"
+                android:layout_width="63dp"
+                android:layout_height="33dp"
+                android:background="@drawable/button"
+                android:onClick="toggleButton"
+
+                android:textOff="10:15"
+                android:textOn="10:15✓:"
+                android:textSize="17dp"
+
+                android:textColor="@color/berbermoru"
+                app:layout_column="1"
+                app:layout_row="1" />
+
+            <ToggleButton
+                android:id="@+id/on45"
+                android:layout_width="63dp"
+                android:layout_height="33dp"
+                android:background="@drawable/button"
+                android:onClick="toggleButton"
+
+                android:textOff="10:45"
+                android:textOn="10:45✓"
+                android:textSize="17dp"
+
+                android:textColor="@color/berbermoru"
+                app:layout_column="3"
+                app:layout_row="1" />
+
+            <ToggleButton
+                android:id="@+id/on30"
+                android:layout_width="63dp"
+                android:layout_height="33dp"
+                android:background="@drawable/button"
+                android:onClick="toggleButton"
+
+                android:textOff="10:30"
+                android:textOn="10:30✓"
+                android:textSize="17dp"
+
+                android:textColor="@color/berbermoru"
+                app:layout_column="2"
+                app:layout_row="1" />
+
+            <ToggleButton
+                android:id="@+id/oniki"
+                android:layout_width="63dp"
+                android:layout_height="33dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/button"
+                android:onClick="toggleButton"
+
+                android:textOff="12:00"
+                android:textOn="12:00✓"
+                android:textSize="17dp"
+
+                android:textColor="@color/berbermoru"
+                app:layout_column="0"
+                app:layout_row="3" />
+
+            <ToggleButton
+                android:id="@+id/oniki15"
+                android:layout_width="63dp"
+                android:layout_height="33dp"
+                android:background="@drawable/button"
+                android:onClick="toggleButton"
+
+                android:textOff="12:15"
+                android:textOn="12:15✓"
+                android:textSize="17dp"
+
+                android:textColor="@color/berbermoru"
+                app:layout_column="1"
+                app:layout_row="3" />
+
+            <ToggleButton
+                android:id="@+id/oniki30"
+                android:layout_width="63dp"
+                android:layout_height="33dp"
+                android:background="@drawable/button"
+                android:onClick="toggleButton"
+
+                android:textOff="12:30"
+                android:textOn="12:30✓"
+                android:textSize="17dp"
+
+                android:textColor="@color/berbermoru"
+                app:layout_column="2"
+                app:layout_row="3" />
+
+            <ToggleButton
+                android:id="@+id/oniki45"
+                android:layout_width="63dp"
+                android:layout_height="33dp"
+                android:background="@drawable/button"
+                android:onClick="toggleButton"
+
+                android:textOff="12:45"
+                android:textOn="12:45✓"
+                android:textSize="17dp"
+
+                android:textColor="@color/berbermoru"
+                app:layout_column="3"
+                app:layout_row="3" />
+
+            <ToggleButton
+                android:id="@+id/onuc"
+                android:layout_width="63dp"
+                android:layout_height="33dp"
+                android:onClick="toggleButton"
+
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/button"
+
+                android:textOff="13:00"
+                android:textOn="13:00✓"
+                android:textSize="17dp"
+
+                android:textColor="@color/berbermoru"
+                app:layout_column="0"
+                app:layout_row="4" />
+
+            <ToggleButton
+                android:id="@+id/onuc15"
+                android:layout_width="63dp"
+                android:layout_height="33dp"
+                android:background="@drawable/button"
+                android:onClick="toggleButton"
+
+                android:textOff="13:15"
+                android:textOn="13:15✓"
+                android:textSize="17dp"
+
+                android:textColor="@color/berbermoru"
+                app:layout_column="1"
+                app:layout_row="4" />
+
+            <ToggleButton
+                android:id="@+id/onuc30"
+                android:layout_width="63dp"
+                android:layout_height="33dp"
+                android:background="@drawable/button"
+                android:onClick="toggleButton"
+
+                android:textOff="13:30"
+                android:textOn="13:30✓"
+                android:textSize="17dp"
+
+                android:textColor="@color/berbermoru"
+                app:layout_column="2"
+                app:layout_row="4" />
+
+            <ToggleButton
+                android:id="@+id/onuc45"
+                android:layout_width="63dp"
+                android:layout_height="33dp"
+                android:background="@drawable/button"
+                android:onClick="toggleButton"
+
+                android:textOff="13:45"
+                android:textOn="13:45✓"
+                android:textSize="17dp"
+
+                android:textColor="@color/berbermoru"
+                app:layout_column="3"
+                app:layout_row="4" />
+
+            <ToggleButton
+                android:id="@+id/ondort"
+                android:layout_width="63dp"
+                android:layout_height="33dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/button"
+                android:onClick="toggleButton"
+
+                android:textOff="14:00"
+                android:textOn="14:00✓"
+                android:textSize="17dp"
+
+                android:textColor="@color/berbermoru"
+                app:layout_column="0"
+                app:layout_row="5" />
+
+            <ToggleButton
+                android:id="@+id/ondort15"
+                android:layout_width="63dp"
+                android:layout_height="33dp"
+                android:background="@drawable/button"
+                android:onClick="toggleButton"
+
+                android:textOff="14:15"
+                android:textOn="14:15✓"
+                android:textSize="17dp"
+
+                android:textColor="@color/berbermoru"
+                app:layout_column="1"
+                app:layout_row="5" />
+
+            <ToggleButton
+                android:id="@+id/ondort30"
+                android:layout_width="63dp"
+                android:layout_height="33dp"
+                android:background="@drawable/button"
+                android:onClick="toggleButton"
+
+                android:textOff="14:30"
+                android:textOn="14:30✓"
+                android:textSize="17dp"
+
+                android:textColor="@color/berbermoru"
+                app:layout_column="2"
+                app:layout_row="5" />
+
+            <ToggleButton
+                android:id="@+id/ondort45"
+                android:layout_width="63dp"
+                android:layout_height="33dp"
+                android:background="@drawable/button"
+                android:onClick="toggleButton"
+
+                android:textOff="14:45"
+                android:textOn="14:45✓"
+                android:textSize="17dp"
+
+                android:textColor="@color/berbermoru"
+                app:layout_column="3"
+                app:layout_row="5" />
+
+            <ToggleButton
+                android:id="@+id/onbes"
+                android:layout_width="63dp"
+                android:layout_height="33dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/button"
+                android:onClick="toggleButton"
+
+                android:textOff="15:00"
+                android:textOn="15:00✓"
+                android:textSize="17dp"
+
+                android:textColor="@color/berbermoru"
+                app:layout_column="0"
+                app:layout_row="6" />
+
+            <ToggleButton
+                android:id="@+id/onbes15"
+                android:layout_width="63dp"
+                android:layout_height="33dp"
+                android:background="@drawable/button"
+                android:onClick="toggleButton"
+
+                android:textOff="15:15"
+                android:textOn="15:15✓"
+                android:textSize="17dp"
+
+                android:textColor="@color/berbermoru"
+                app:layout_column="1"
+                app:layout_row="6" />
+
+            <ToggleButton
+                android:id="@+id/onbes30"
+                android:layout_width="63dp"
+                android:layout_height="33dp"
+                android:background="@drawable/button"
+                android:onClick="toggleButton"
+
+                android:textOff="15:30"
+                android:textOn="15:30✓"
+                android:textSize="17dp"
+
+                android:textColor="@color/berbermoru"
+                app:layout_column="2"
+                app:layout_row="6" />
+
+            <ToggleButton
+                android:id="@+id/onbes45"
+                android:layout_width="63dp"
+                android:layout_height="33dp"
+                android:background="@drawable/button"
+                android:onClick="toggleButton"
+
+                android:textOff="15:45"
+                android:textOn="15:45✓"
+                android:textSize="17dp"
+
+                android:textColor="@color/berbermoru"
+                app:layout_column="3"
+                app:layout_row="6" />
+
+            <ToggleButton
+                android:id="@+id/onalti"
+                android:layout_width="63dp"
+                android:layout_height="33dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/button"
+                android:onClick="toggleButton"
+
+                android:textOff="16:00"
+                android:textOn="16:00✓"
+                android:textSize="17dp"
+
+                android:textColor="@color/berbermoru"
+                app:layout_column="0"
+                app:layout_row="7" />
+
+            <ToggleButton
+                android:id="@+id/onalti15"
+                android:layout_width="63dp"
+                android:layout_height="33dp"
+                android:background="@drawable/button"
+                android:onClick="toggleButton"
+
+                android:textOff="16:15"
+                android:textOn="16:15✓"
+                android:textSize="17dp"
+
+                android:textColor="@color/berbermoru"
+                app:layout_column="1"
+                app:layout_row="7" />
+
+            <ToggleButton
+                android:id="@+id/onalti30"
+                android:layout_width="63dp"
+                android:layout_height="33dp"
+                android:background="@drawable/button"
+                android:onClick="toggleButton"
+
+                android:textOff="16:30"
+                android:textOn="16:30✓"
+                android:textSize="17dp"
+
+                android:textColor="@color/berbermoru"
+                app:layout_column="2"
+                app:layout_row="7" />
+
+            <ToggleButton
+                android:id="@+id/onalti45"
+                android:layout_width="63dp"
+                android:layout_height="33dp"
+                android:background="@drawable/button"
+                android:onClick="toggleButton"
+
+                android:textOff="16:45"
+                android:textOn="16:45✓"
+                android:textSize="17dp"
+
+                android:textColor="@color/berbermoru"
+                app:layout_column="3"
+                app:layout_row="7" />
+
+            <ToggleButton
+                android:id="@+id/onyedi"
+                android:layout_width="63dp"
+                android:layout_height="33dp"
+                android:background="@drawable/button"
+                android:onClick="toggleButton"
+
+                android:textOff="17:00"
+                android:textOn="17:00✓"
+                android:textSize="17dp"
+
+                android:textColor="@color/berbermoru"
+                app:layout_column="0"
+                app:layout_row="8" />
+
+            <ToggleButton
+                android:id="@+id/onyedi15"
+                android:layout_width="63dp"
+                android:layout_height="33dp"
+                android:background="@drawable/button"
+                android:onClick="toggleButton"
+
+                android:textOff="17:15"
+                android:textOn="17:15✓"
+                android:textSize="17dp"
+
+                android:textColor="@color/berbermoru"
+                app:layout_column="1"
+                app:layout_row="8" />
+
+            <ToggleButton
+                android:id="@+id/onyedi30"
+                android:layout_width="63dp"
+                android:layout_height="33dp"
+                android:background="@drawable/button"
+                android:onClick="toggleButton"
+
+                android:textOff="17:30"
+                android:textOn="17:30✓"
+                android:textSize="17dp"
+
+                android:textColor="@color/berbermoru"
+                app:layout_column="2"
+                app:layout_row="8" />
+
+            <ToggleButton
+                android:id="@+id/onyedi45"
+                android:layout_width="63dp"
+                android:layout_height="33dp"
+                android:background="@drawable/button"
+                android:onClick="toggleButton"
+
+                android:textOff="17:45"
+                android:textOn="17:45✓"
+                android:textSize="17dp"
+
+                android:textColor="@color/berbermoru"
+                app:layout_column="3"
+                app:layout_row="8" />
+        </androidx.gridlayout.widget.GridLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
